@@ -1,3 +1,4 @@
+import { Mount } from "@/components";
 import { StyleHelper } from "@/helpers";
 import { RootProvider } from "@/providers/RootProvider";
 import { ColorSchemeScript } from "@mantine/core";
@@ -24,7 +25,9 @@ export default function RootLayout({
   return (
     <html className={htmlClasses} lang="ru">
       <head>
-        <ColorSchemeScript />
+        <Mount>
+          <ColorSchemeScript />
+        </Mount>
       </head>
       <body>
         <RootProvider>{children}</RootProvider>
