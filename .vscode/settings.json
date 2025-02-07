@@ -1,0 +1,16 @@
+{
+    "cSpell.words": [
+        "roboto",
+        "üñîçøðé",
+        "unocss",
+        "zustand",
+        "субдомене"
+    ],
+    "cssVariables.lookupFiles": [
+        "**/*.css",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.less",
+        "node_modules/@mantine/core/styles.css"
+    ]
+}
