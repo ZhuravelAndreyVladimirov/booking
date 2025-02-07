@@ -1,10 +1,10 @@
+import { fontVariable } from "@/assets/font/fonts";
+import { Mount } from "@/components";
 import { StyleHelper } from "@/helpers";
 import { RootProvider } from "@/providers/RootProvider";
 import { ColorSchemeScript } from "@mantine/core";
 import { Metadata } from "next";
 import { ReactNode } from "react";
-
-import { fontVariable } from "@/assets/font/fonts";
 
 import "./globals.scss";
 
@@ -24,7 +24,9 @@ export default function RootLayout({
   return (
     <html className={htmlClasses} lang="ru">
       <head>
-        <ColorSchemeScript />
+        <Mount>
+          <ColorSchemeScript />
+        </Mount>
       </head>
       <body>
         <RootProvider>{children}</RootProvider>
